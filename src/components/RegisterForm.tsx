@@ -67,13 +67,13 @@ const RegisterForm = () => {
     <>
       <h1 className="mt-2 text-3xl font-bold text-center  text-indigo-800">Register</h1>
       <form
-        className="flex flex-col items-center justify-center mt-4 bg-black p-6 rounded-lg shadow-md"
+        className="flex flex-col items-center justify-center mt-4  p-6 rounded-lg shadow-md"
         onSubmit={handleSubmit}
       >
         <div className="flex w-[80%] flex-col mb-4">
           <label htmlFor="regusername" className="mb-2 font-medium text-indigo-700">Username</label>
           <input
-            className="rounded-md border border-solid border-indigo-300 p-[10px] bg-black text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="rounded-md border border-solid border-indigo-300 p-[10px]  text-black focus:outline-none focus:ring-2 focus:ring-indigo-500"
             name="username"
             type="text"
             id="regusername"
@@ -87,7 +87,7 @@ const RegisterForm = () => {
         <div className="flex w-[80%] flex-col mb-4">
           <label htmlFor="regpassword" className="mb-2 font-medium text-indigo-700">Password</label>
           <input
-            className="rounded-md border border-solid border-indigo-300 p-[10px] bg-black text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="rounded-md border border-solid border-indigo-300 p-[10px]  text-black focus:outline-none focus:ring-2 focus:ring-indigo-500"
             name="password"
             type="password"
             id="regpassword"
@@ -98,7 +98,7 @@ const RegisterForm = () => {
         <div className="flex w-[80%] flex-col mb-4">
           <label htmlFor="regemail" className="mb-2 font-medium text-indigo-700">Email</label>
           <input
-            className="rounded-md border border-solid border-indigo-300 p-[10px] bg-black text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="rounded-md border border-solid border-indigo-300 p-[10px] b text-black focus:outline-none focus:ring-2 focus:ring-indigo-500"
             name="email"
             type="email"
             id="regemail"

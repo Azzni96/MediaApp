@@ -34,13 +34,13 @@ const LoginForm = (props: Props) => {
     <>
       <h1 className="mt-5 text-3xl font-bold text-center text-indigo-800">Login</h1>
       <form
-        className="flex flex-col items-center justify-center mt-4 bg-black p-6 rounded-lg shadow-md"
+        className="flex flex-col items-center justify-center mt-4  p-6 rounded-lg shadow-md"
         onSubmit={handleSubmit}
       >
         <div className="flex w-[80%] flex-col mb-4">
           <label htmlFor="loginusername" className="mb-2 font-medium text-indigo-700">Username</label>
           <input
-            className="rounded-md border border-solid border-indigo-300 p-[10px] bg-black text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="rounded-md border border-solid border-indigo-300 p-[10px] text-black focus:outline-none focus:ring-2 focus:ring-indigo-500"
             name="username"
             type="text"
             id="loginusername"
@@ -51,7 +51,7 @@ const LoginForm = (props: Props) => {
         <div className="flex w-[80%] flex-col mb-4">
           <label htmlFor="loginpassword" className="mb-2 font-medium text-indigo-700">Password</label>
           <input
-            className="rounded-md border border-solid border-indigo-300 p-[10px] bg-black text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="rounded-md border border-solid border-indigo-300 p-[10px]  text-black focus:outline-none focus:ring-2 focus:ring-indigo-500"
             name="password"
             type="password"
             id="loginpassword"

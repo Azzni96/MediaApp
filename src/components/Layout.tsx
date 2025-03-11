@@ -19,17 +19,17 @@ const Layout = () => {
 
   return (
     <div className={isDarkMode ? 'dark' : ''}>
-      <h1 className="mb-5 text-3xl font-bold text-center text-gray-800">Media Sharing App</h1>
+      <h1 className="mb-15 text-3xl font-bold text-center text-gray-300">Media App</h1>
       <button
         onClick={toggleMode}
-        className="mb-5 p-2 bg-blue-500 text-white rounded"
+        className="mb-5 p-2 bg-blue-500 text-white rounded "
       >
         Toggle {isDarkMode ? 'Light' : 'Dark'} Mode
       </button>
       <div className="flex flex-col">
         <nav
           className={`p-4 shadow-lg w-full ${
-            isDarkMode ? 'bg-gray-800' : 'bg-yellow-200'
+            isDarkMode ? 'bg-gray-100' : 'bg-gray-500'
           }`}
         >
           <ul className="m-0 flex flex-row list-none space-x-4">
@@ -85,7 +85,7 @@ const Layout = () => {
         </main>
       </div>
       <footer className="bg-gray-800 text-white text-center p-4 mt-8 dark:bg-black">
-        &copy; 2023 Media Sharing App
+        &copy; 2025 Azzni
       </footer>
     </div>
   );

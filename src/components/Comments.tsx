@@ -65,7 +65,7 @@ const Comments = ({item}: {item: MediaItemWithOwner}) => {
           <div className="flex w-4/5 flex-col mb-4">
             <label htmlFor="comment_text" className="mb-2 font-medium text-gray-700">Post a comment</label>
             <input
-              className="rounded-md border p-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="rounded-md border p-2.5 focus:outline-none text-gray-500 focus:ring-2 focus:ring-blue-500"
               name="comment_text"
               type="text"
               id="comment_text"

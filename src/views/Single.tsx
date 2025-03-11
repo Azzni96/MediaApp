@@ -10,23 +10,12 @@ const Single = () => {
   return (
     <>
       <h2 className="text-2xl font-bold text-gray-800">Single</h2>
-      <form className="mb-4">
-        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="comment">
-          Add a comment:
-        </label>
-        <input
-          type="text"
-          id="comment"
-          name="comment"
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          placeholder="Write your comment here..."
-        />
-      </form>
+
       <h3 className="text-xl font-semibold text-white">{item.title}</h3>
       <p className="text-gray-600">{new Date(item.created_at).toLocaleString('fi-FI')}</p>
       {item.media_type.includes('image') ? (
         <img
-          className="max-w-full rounded-lg shadow-md border-4 border-blue-500"
+          className="max-w-full rounded-lg shadow-md border-4 "
           src={item.filename}
           alt={item.title}
         />
