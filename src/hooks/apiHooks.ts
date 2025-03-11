@@ -100,7 +100,21 @@ const useFile = () => {
       options,
     );
   };
-  return {postFile};
+
+  const deleteFile = async (filename: string, token: string) => {
+    const options = {
+      method: 'DELETE',
+      headers: {
+        Authorization: 'Bearer ' + token,
+      },
+    };
+    return await fetchData<MessageResponse>(
+      import.meta.env.VITE_UPLOAD_API + '/delete/' + filename,
+      options,
+    );
+  };
+
+  return {postFile, deleteFile};
 };
 
 const useAuthentication = () => {
